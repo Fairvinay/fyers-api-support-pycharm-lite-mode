@@ -17,8 +17,10 @@ from ServerThreadSelfManage import ServerThreadSelfManage
 
 
 # === Configuration ===S
-client_id = os.environ.get("client_id", "TRLV2A6GPL-100")
-secret_key = os.environ.get("secret_key", "V72MPISUJC")
+client_id = os.environ.get("client_id", "V8BNUWJ4WQ-100") 
+# "TRLV2A6GPL-100"
+secret_key = os.environ.get("secret_key", "KOA61TZLP4")
+# "V72MPISUJC"
 #redirec_base_url = os.environ.get("redirec_base_url", "https://192.168.1.7:8888")
 redirec_base_url = os.environ.get("redirec_base_url", "https://successrate.netlify.app")
 #redirect_uri = "https://192.168.1.4:8888/.netlify/functions/netlifystockfyersbridge/api/fyersauthcodeverify"
