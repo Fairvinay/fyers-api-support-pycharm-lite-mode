@@ -19,7 +19,8 @@ from ServerThreadSelfManage import ServerThreadSelfManage
 # === Configuration ===S
 client_id = os.environ.get("client_id", "TRLV2A6GPL-100")
 secret_key = os.environ.get("secret_key", "V72MPISUJC")
-redirec_base_url = os.environ.get("redirec_base_url", "https://192.168.1.7:8888")
+#redirec_base_url = os.environ.get("redirec_base_url", "https://192.168.1.7:8888")
+redirec_base_url = os.environ.get("redirec_base_url", "https://successrate.netlify.app")
 #redirect_uri = "https://192.168.1.4:8888/.netlify/functions/netlifystockfyersbridge/api/fyersauthcodeverify"
 redirect_uri = redirec_base_url.rstrip("/") +"/.netlify/functions/netlifystockfyersbridge/api/fyersauthcodeverify"
 response_type = "code"
@@ -33,7 +34,7 @@ flask_process = None  # Will store reference to the running Process
 message_queue = queue.Queue()
 outgoing = asyncio.Queue()
 
-tickers_global = ['NSE:NIFTY25O1425150CE']
+tickers_global = ['NSE:NIFTY2631023150CE']
 threadsocket = None
 # Create the server thread (not started yet)
 #server_thread = ServerThread()
